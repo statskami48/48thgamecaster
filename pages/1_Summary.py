@@ -5,4 +5,6 @@ st.title("48TH Game Caster")
 st.subheader("Please Like & follow")
 st.write("https://www.facebook.com/48THGameCaster")
 
-st.markdown("Summary data")
+st.subheader("Member")
+st.image("img\sum_each.png")
+st.warning("Collect data : Jul22 - May23")
