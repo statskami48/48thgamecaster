@@ -7,4 +7,4 @@ st.write("https://www.facebook.com/48THGameCaster")
 
 
 st.subheader("April 2023")
-st.image("img\sum_apr23.png")
+st.image("img/sum_apr23.png")
