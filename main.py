@@ -1,10 +1,14 @@
 import streamlit as st
 from PIL import Image
+from streamlit_extras.badges import badge
+from streamlit_extras.buy_me_a_coffee import button
+from streamlit_extras.colored_header import colored_header
 
 st.set_page_config(page_title="Statistics 48TH Game Caster", page_icon="🌟", layout="centered")
 st.title("48TH Game Caster")
-st.subheader("Please Like & follow")
+st.subheader("Please Like & Follow")
 st.write("https://www.facebook.com/48THGameCaster")
+
 
 st.markdown("🎮Weekly Schedule : 15-21 MAY 2023👾")
 st.image("https://scontent.fbkk26-1.fna.fbcdn.net/v/t39.30808-6/346647020_750356016880035_5170523076902930880_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGzNninIfmlyTYcliJtKpsnHB6CxzVRObEcHoLHNVE5sbg9Rf-lAj7fyLvbmAE44eE&_nc_ohc=d4uPaP7-o8gAX_l0M-v&_nc_ht=scontent.fbkk26-1.fna&oh=00_AfC0JRgtYS2Exb_ATVhLjjSRfMhDARqECoTv6qFSjIBZTA&oe=646A995D")
@@ -16,7 +20,12 @@ st.image("https://scontent.fbkk26-1.fna.fbcdn.net/v/t39.30808-6/346647020_750356
 
 #with col2:
 
-st.header("Replay weekly 15-21/5/23")
+
+colored_header(
+    label="Replay weekly 15-21/5/23",
+    description=" 15-21/5/23",
+    color_name="violet-70",
+)
 
 col1, col2 = st.columns(2, gap="small")
 with col1:
@@ -61,9 +70,9 @@ with col1:
 with col2:
     st.image("https://img.bnk48cdn.net/others/cgm48-6th-single-profile-square/v2/Champoo.png", width=100)
     st.subheader("Champoo CGM48 18/5/23 22.30-00.00")
-    st.write("")
+    st.write("นกฮูกพร้อมยางงงง #ChampooCGM48 #CGM48")
     st.write("Play : Roblox")
-    st.write("")
+    st.write("1:16:31")
     st.write("https://www.facebook.com/48THGameCaster/videos/963870701633923")
 
 col1, col2 = st.columns(2, gap="small")
@@ -102,3 +111,11 @@ with col2:
 
 
 st.warning("updated : 18/5/23 22.00")
+
+link = '[Contact us](https://twitter.com/Stats48TH)'
+st.markdown(link, unsafe_allow_html=True)
+
+
+badge(type="twitter", name="stats48th")
+badge(type="buymeacoffee", name="stats48th")
+button(username="stats48th", floating=False, width=221)
